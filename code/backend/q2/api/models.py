@@ -8,5 +8,5 @@ class Link(models.Model):
         editable = False)
 
     target = models.URLField()
-    created_at = models.DateTimeField(auto_new_add = True)
-    last_modified_at = models.DateTimeField(auto_new = True)
+    created_at = models.DateTimeField(auto_now_add = True)
+    last_modified_at = models.DateTimeField(auto_now = True)
